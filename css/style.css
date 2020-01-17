@@ -1,0 +1,119 @@
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 80vw;
+}
+
+img {
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    padding: 1.5em 0 0.5em 0;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.intro {
+    background-color: lightgray;
+    justify-content: space-between;
+}
+
+.projects {
+    flex-direction: column;
+    align-content: center;
+    background-color: lightyellow;
+}
+
+.intro .container {
+    /* padding: 2em 5em; */
+    margin: 4em 4.5em;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro .name, .intro .tagline {
+    display: block;
+    padding: 0.2em 0;
+}
+
+.project-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em 1em;
+}
+
+.contact .button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1em 1em 0 1em;
+}
+
+.item {
+
+}
+
+.contact {
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+}
+
+form {
+    background-color: lightsteelblue;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+
+form input, form textarea {
+    margin: 0.2em;
+}
+
+input[type="submit"], button {
+    border: none;
+    background-color: darkblue;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: rgb(1, 1, 200);
+}
+
+footer {
+    background-color: lightcoral;
+    justify-content: center;
+    padding: 1em 1em;
+}
+
+footer img  {
+    padding: 0 0.5em;
+}
