@@ -2,6 +2,7 @@
 @import "animation.scss";
 @import "intro.scss";
 @import "projects.scss"; 
+@import "mixins.scss";
 
 * {
     box-sizing: border-box;
@@ -11,7 +12,6 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #f7f7f7;
     width: 100vw;
 }
 
