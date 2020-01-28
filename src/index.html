@@ -21,7 +21,7 @@
 
     <section class="intro">
 
-      <img class="intro__thumb" src="img/static-website-coder.svg" alt="">
+      <!--  <img class="intro__thumb" src="img/static-website-coder.svg" alt=""> -->
 
       <h1>
         <span class="intro__hello">Hey, I am Petr. </span>
@@ -81,10 +81,10 @@
           <img src="/img/moon.svg" alt="My awesome project">
         </div>
         <div class="project__title">
-          <h3>Even more awesome project</h3>
+          <h3>Sky is the limit</h3>
         </div>
         <div class="project__text">
-          Practice make perfect. Rome was not built in a day. [Insert another cliché].
+          Unless you can afford to launch a car into space. Just for fun.
         </div>
         <div class="project__lang">
           HTML, CSS, JavaScript
@@ -92,31 +92,38 @@
         <button class="project__btn">Show me more</button>
       </div>
 
-
     </section>
 
+    <section class="contact">
 
-    <h2>
-      Contact me
-    </h2>
+      <h2 class="contact__title">Contact me</h2>
 
-    <form action="">
+      <form class="contact__form" action="#">
 
-      <input required type="text" name="" id="" placeholder="Your name">
+        <div class="input-wrapper">
+          <input type="text" name="" id="name" required>
+          <label for="name">Your name</label>
+        </div>
 
-      <input required type="email" name="" id="" placeholder="Your email">
-      <textarea required name="" id="" cols="40" rows="10" placeholder="Your message"></textarea>
+        <div class="input-wrapper">
+          <input type="email" name="" id="email" required>
+          <label for="email">Your e-mail</label>
+        </div class="input-wrapper">
 
-      <div class="button-wrapper">
+        <div class="input-wrapper">
+          <textarea name="" id="message" cols="40" rows="10" required></textarea>
+          <label for="message">Your message</label>
+        </div>
+
         <input type="submit" value="Submit">
-      </div>
 
-    </form>
+      </form>
+    </section>
 
     <footer>
-      <img src="https://via.placeholder.com/65.png?text=GitHub" alt="">
-      <img src="https://via.placeholder.com/65.png?text=LinkedIn" alt="">
-      <img src="https://via.placeholder.com/65.png?text=Twitter" alt="">
+      <i class="fab fa-github-square"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-twitter-square"></i>
     </footer>
 
   </main>

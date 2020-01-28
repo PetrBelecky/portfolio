@@ -22,5 +22,9 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "font-awesome": "^4.7.0"
   }
 }

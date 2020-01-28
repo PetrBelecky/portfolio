@@ -1,8 +1,13 @@
 @import "colors.scss";
-@import "animation.scss";
 @import "intro.scss";
 @import "projects.scss"; 
-@import "mixins.scss";
+@import "contact.scss";
+@import "footer.scss";
+
+@import "fontawesome.scss";
+@import "regular.scss";
+@import "solid.scss";
+@import "brands.scss";
 
 * {
     box-sizing: border-box;
