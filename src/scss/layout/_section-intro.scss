@@ -1,9 +1,7 @@
-@import "colors.scss";
-
 .intro {
     width: 100vw;
     height: 100vh;
-    background-color: $color-background;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,13 +16,6 @@
     br {
         display: none;
     }
-
-    /* &__thumb {
-        width: 13rem;
-        height: 13rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    } */
 
     &__hello {
         font-size: 2.5rem;      
@@ -58,6 +49,20 @@
     &__arrow {
         width: 3rem;
         height: 3rem;
-        animation: updown 2s ease infinite;
+        /* animation: updown 2s ease-out infinite; */
     }
 }
+
+/* @keyframes updown {
+    0% {
+      transform: translateY(-10%);
+    }
+
+    50% {
+      transform: translateY(20%);
+    }
+  
+    100% {
+      transform: translateY(-10%);
+    }
+  } */

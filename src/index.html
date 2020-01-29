@@ -5,23 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Petr Bělecký</title>
-
-  <!-- Font import -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <title>Petr Bělecký | Web Developer</title>
 
   <!-- Stylesheet declaration -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
   <main>
 
     <section class="intro">
-
-      <!--  <img class="intro__thumb" src="img/static-website-coder.svg" alt=""> -->
 
       <h1>
         <span class="intro__hello">Hey, I am Petr. </span>
@@ -34,7 +27,6 @@
         <p class="intro__cta">See my projects</p>
         <!-- maybe give a border to text to imitate btn, give it hover -->
         <img class="intro__arrow" src="img/arrow-bottom.svg" alt="arrow">
-        <!-- make it flow up and down -->
       </div>
 
     </section>
@@ -96,34 +88,36 @@
 
     <section class="contact">
 
-      <h2 class="contact__title">Contact me</h2>
+      <h2>Contact me</h2>
 
-      <form class="contact__form" action="#">
+      <form class="form" action="#">
 
-        <div class="input-wrapper">
-          <input type="text" name="" id="name" required>
-          <label for="name">Your name</label>
+        <div class="form__input-wrapper">
+          <input class="form__input" type="text" name="" id="name" required>
+          <label class="form__label" for="name">Your name</label>
         </div>
 
-        <div class="input-wrapper">
-          <input type="email" name="" id="email" required>
-          <label for="email">Your e-mail</label>
-        </div class="input-wrapper">
-
-        <div class="input-wrapper">
-          <textarea name="" id="message" cols="40" rows="10" required></textarea>
-          <label for="message">Your message</label>
+        <div class="form__input-wrapper">
+          <input class="form__input" type="email" name="" id="email" required>
+          <label class="form__label" for="email">Your e-mail</label>
         </div>
 
-        <input type="submit" value="Submit">
+        <div class="form__input-wrapper">
+          <textarea class="form__input" name="" id="message" cols="40" rows="10" required></textarea>
+          <label class="form__label" for="message">Your message</label>
+        </div>
+
+        <input class="form__btn" type="submit" value="Submit">
 
       </form>
     </section>
 
-    <footer>
-      <i class="fab fa-github-square"></i>
-      <i class="fab fa-linkedin"></i>
-      <i class="fab fa-twitter-square"></i>
+    <hr>
+
+    <footer class="footer">
+      <span class="fab fa-github-square"></span>
+      <span class="fab fa-linkedin"></span>
+      <span class="fab fa-twitter-square"></span>
     </footer>
 
   </main>

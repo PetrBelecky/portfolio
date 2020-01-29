@@ -1,0 +1,31 @@
+
+%button {
+  align-self: center;
+  font-family: "Roboto", sans-serif;
+  padding: 0.4rem 0.4rem;
+  width: 55%;
+  margin-bottom: 1rem;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 5%;
+  background-color: white;
+}
+
+%form-button {
+  font-family: "Roboto", sans-serif;
+    height: 2rem;
+    width: 6rem;
+    padding: 0;
+    border-radius: 4%;
+    margin-left: auto;
+    display: block;
+    background-color: #f0f0f0;
+
+    &:hover,
+    &:active {
+    background-color: #fafafa;
+    border: 1px solid #0074D9;
+    color: #0074D9;
+    font-weight: bold;
+    }
+  }
