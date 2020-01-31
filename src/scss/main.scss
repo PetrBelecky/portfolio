@@ -10,14 +10,18 @@
 @import "layout/section-projects";
 @import "layout/section-contact";
 @import "layout/section-footer";
+@import "layout/section-skills";
 
 /* COMPONENTS */
 @import "components/project";
+@import "components/skills";
 @import "components/headlines";
 @import "components/buttons";
 @import "components/contact-form";
 @import "components/horizontal-line";
 @import "components/links";
+@import "components/spans";
+
 
 /* VENDORS import */
 @import "vendors/fontawesome/fontawesome";
