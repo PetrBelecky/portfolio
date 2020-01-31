@@ -17,11 +17,19 @@
     <section class="intro">
 
       <!-- remove BEM and find out a way to include 3 beats with animation  -->
+
+      <!-- maybe add arrows at sides, that will change? -->
+      <!-- maybe three dots bellow, to indicate there is many more? ability to slide -->
+      <!-- or type it same way as Natali -->
+
       <h1>
         <span class="intro__hello">Hi, I am Petr</span>
-        <br><span class="intro__whoami">I am a web developer</span>
-        <br><span class="intro__whoami hidden">I am a digital enthusiast</span>
-        <br><span class="intro__whoami hidden">I am a passionate learner</span>
+
+        <span class="intro__whoami">I am a web developer</span>
+
+        <span class="intro__whoami hidden">I am a digital enthusiast</span>
+
+        <span class="intro__whoami hidden">I am a passionate learner</span>
       </h1>
 
 
@@ -42,23 +50,26 @@
 
       <div class="project">
         <div class="project__thumb">
-          <img src="/img/santa.svg" alt="My awesome project">
+          <img src="/img/santa.svg" alt="Golden project">
         </div>
-        <div class="project__title">
+        <div class=" project__title">
           <h3>This project is just golden</h3>
         </div>
         <div class="project__text">
           Like a pair of socks. No kid wants them, but every adults needs them.
         </div>
         <div class="project__lang">
-          HTML, CSS, JavaScript, PHP
+          <span class="tag--bottom tag-html">HTML</span>
+          <span class="tag--bottom tag-css">CSS</span>
+          <span class="tag--bottom tag-js">JavaScript</span>
+          <span class="tag--bottom tag-php">PHP</span>
         </div>
         <button class="btn btn--small btn--primary">Show me more</button>
       </div>
 
       <div class="project">
         <div class="project__thumb">
-          <img src="/img/moon.svg" alt="My awesome project">
+          <img src="/img/moon.svg" alt="Sky is the limit">
         </div>
         <div class="project__title">
           <h3>Sky is the limit</h3>
@@ -67,7 +78,9 @@
           Unless you can afford to launch a car into space. Just for fun.
         </div>
         <div class="project__lang">
-          React, Laravel, MySQL
+          <span class="tag--bottom tag-react">React</span>
+          <span class="tag--bottom tag-laravel">Laravel</span>
+          <span class="tag--bottom tag-mysql">MySQL</span>
         </div>
         <button class="btn btn--small btn--primary">Show me more</button>
       </div>
@@ -83,10 +96,17 @@
           Website that makes today and all future days awesome.
         </div>
         <div class="project__lang">
-          HTML, CSS, JavaScript
+          <span class="tag--bottom tag-html">HTML</span>
+          <span class="tag--bottom tag-css">CSS</span>
+          <span class="tag--bottom tag-js">JavaScript</span>
         </div>
         <button class="btn btn--small btn--primary">Show me more</button>
       </div>
+
+      <button class="btn btn--normal btn--primary-inverted">
+        See all projects
+        <span class="fas fa-angle-double-right"></span>
+      </button>
 
       <!-- Add button to see more -->
 
@@ -99,18 +119,18 @@
       <h3>Acquired skills</h3>
 
       <p class="skills__acquired">
-        <span class="tag-html">HTML5</span>
-        <span class="tag-css">CSS3</span>
-        <span class="tag-js">JavaScript</span>
+        <span class="tag-html tag--rectangle">HTML5</span>
+        <span class="tag-css tag--rectangle">CSS3</span>
+        <span class="tag-js tag--rectangle">JavaScript</span>
       </p>
 
       <h3>Now learning</h3> <!-- add animation with three dots -->
 
       <p class="skills__learning">
-        <span class="tag-php">PHP</span>
-        <span class="tag-laravel">Laravel</span>
-        <span class="tag-react">React</span>
-        <span class="tag-mysql">MySQL</span>
+        <span class="tag-php tag--rectangle">PHP</span>
+        <span class="tag-laravel tag--rectangle">Laravel</span>
+        <span class="tag-react tag--rectangle">React</span>
+        <span class="tag-mysql tag--rectangle">MySQL</span>
       </p>
     </section>
 
@@ -136,7 +156,10 @@
           <label class="form__label" for="message">Your message</label>
         </div>
 
-        <input class="form__btn" type="submit" value="Submit">
+        <button class="btn btn--normal btn--third btn--secondary" type="submit">
+          Submit
+          <span class="fas fa-paper-plane"></span>
+        </button>
 
       </form>
     </section>
