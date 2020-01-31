@@ -1,17 +1,5 @@
 
-%button {
-  align-self: center;
-  font-family: "Roboto", sans-serif;
-  padding: 0.4rem 0.4rem;
-  width: 55%;
-  margin-bottom: 1rem;
-  outline: none;
-  border: 1px solid grey;
-  border-radius: 5%;
-  background-color: white;
-}
-
-%form-button {
+/* %form-button {
   font-family: "Roboto", sans-serif;
     height: 2rem;
     width: 6rem;
@@ -28,16 +16,33 @@
     color: #0074D9;
     font-weight: bold;
     }
-}
+} */
 
 .btn {
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-  border-width: 2px;
+  border-width: 1.5px;
   border-style: solid;
 
+  /* align Font awesome icons on buttons */
+  span.fas {
+    transform: translateY(5%);
+    opacity: 0.9;
+    margin-left: 0.2em;
+  }
+
+  &--third {
+    width: 7em;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
   &--small {
+    padding: 0.5em;
+    font-size: 0.9em;
   }
 
   &--normal {
@@ -57,7 +62,7 @@
     &-inverted {
     background-color: $color-background;
     color: $color-primary;
-    border-color: $color-background; 
+    border-color: $color-primary; 
     }
   }
 
@@ -69,7 +74,7 @@
     &-inverted {
       background-color:$color-background;
       color: $color-secondary;
-      border-color: $color-background;
+      border-color: $color-secondary;
     }
   }
 
