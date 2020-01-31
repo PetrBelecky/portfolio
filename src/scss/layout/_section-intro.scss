@@ -3,77 +3,35 @@
 .intro {
     width: 100vw;
     height: 100vh;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
     background-color: $color-text;
     color: $color-background;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    justify-content: center;
+    justify-content: space-around;
 
-    br {
+    /* br {
         display: none;
-    }
+    } */
 
-    &__hello {
-        font-size: 2.5rem;      
-        margin-bottom: 1rem;   
-        margin-top: -5rem;  
+    &__hello {       
         display: block;
-        font-weight: normal;
+        margin-bottom: 0.5rem; 
     }
 
     &__whoami{
         font-size: 1.4rem;
-        margin-bottom: 3.5rem;
+        margin-bottom: 0.5rem;
         display: block;
         font-weight: normal;
-    }
-
-    &__findme {
-        font-size: 1rem;
-    }
-
-    &__see {
-        font-size: 1rem;
     }
 
     &__projects {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 20%;
-        position: absolute;
-        bottom: 3rem;
-    }    
-
-    &__cta {
-        padding: 0.6rem;
-        font-size: 1rem;
-        background-color:$color-secondary;
-        color: $color-background;
-        border: 2px solid $color-background;
-        border-radius: 5%;
-    }
-
-    
-
-    &__arrow {
-        font-size: 2.5rem;
-        /* animation: updown 2s ease-out infinite; */
-    }
-}
-
-/* @keyframes updown {
-    0% {
-      transform: translateY(-10%);
-    }
-
-    50% {
-      transform: translateY(20%);
-    }
-  
-    100% {
-      transform: translateY(-10%);
-    }
-} */
+        height: 5.6rem;
+    }  
+}      
