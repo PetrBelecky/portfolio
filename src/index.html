@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Petr Bělecký | Web Developer</title>
+  <title>Petr Bělecký | Digital enthusiast</title>
 
   <!-- Stylesheet declaration -->
   <link rel="stylesheet" href="/css/main.css">
@@ -16,6 +16,7 @@
 
     <section class="intro">
 
+      <!-- remove BEM and find out a way to include 3 beats with animation  -->
       <h1>
         <span class="intro__hello">Hi, I am Petr</span>
         <br><span class="intro__whoami">I am a web developer</span>
@@ -23,13 +24,6 @@
         <br><span class="intro__whoami hidden">I am a passionate learner</span>
       </h1>
 
-      <!--       <p class="intro__findme">Find me on
-        <a href="" target="_blank" class="linkedin">LinkedIn</a>,
-        <a href="" target="_blank" class="github">GitHub</a> or
-        <a href="" target="_blank" class="twitter">Twitter</a>.¨
-      </p> -->
-
-      <!--   <p class="intro__see">See my <a>projects</a>, <a>skills</a> or <a>contact me</a>.</p> -->
 
       <div class="intro__projects">
         <button class="btn btn--normal btn--secondary">See my projects</button>
@@ -41,8 +35,10 @@
 
     <section class="projects">
       <h2>
-        My projects
+        My recent projects
       </h2>
+
+      <!-- Add a labels to projects learning / client work -->
 
       <div class="project">
         <div class="project__thumb">
@@ -55,9 +51,9 @@
           Like a pair of socks. No kid wants them, but every adults needs them.
         </div>
         <div class="project__lang">
-          HTML, CSS, JavaScript
+          HTML, CSS, JavaScript, PHP
         </div>
-        <button class="project__btn">Show me more</button>
+        <button class="btn btn--small btn--primary">Show me more</button>
       </div>
 
       <div class="project">
@@ -71,9 +67,9 @@
           Unless you can afford to launch a car into space. Just for fun.
         </div>
         <div class="project__lang">
-          HTML, CSS, JavaScript
+          React, Laravel, MySQL
         </div>
-        <button class="project__btn">Show me more</button>
+        <button class="btn btn--small btn--primary">Show me more</button>
       </div>
 
       <div class="project">
@@ -89,10 +85,35 @@
         <div class="project__lang">
           HTML, CSS, JavaScript
         </div>
-        <button class="project__btn">Show me more</button>
+        <button class="btn btn--small btn--primary">Show me more</button>
       </div>
 
+      <!-- Add button to see more -->
+
     </section>
+
+    <section class="skills">
+
+      <h2>My skills</h2>
+
+      <h3>Acquired skills</h3>
+
+      <p class="skills__acquired">
+        <span class="tag-html">HTML5</span>
+        <span class="tag-css">CSS3</span>
+        <span class="tag-js">JavaScript</span>
+      </p>
+
+      <h3>Now learning</h3> <!-- add animation with three dots -->
+
+      <p class="skills__learning">
+        <span class="tag-php">PHP</span>
+        <span class="tag-laravel">Laravel</span>
+        <span class="tag-react">React</span>
+        <span class="tag-mysql">MySQL</span>
+      </p>
+    </section>
+
 
     <section class="contact">
 
