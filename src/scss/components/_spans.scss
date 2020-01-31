@@ -1,0 +1,49 @@
+@import "../helpers/colors";
+
+.tag {
+  
+  &--rectangle {
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  &--bottom {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom: 0.05em;
+    margin-right: 0.3em;
+  }
+
+  &-html {
+    border-color: $color-tag-html;
+  }
+
+  &-css {
+    border-color: $color-tag-css;
+  }
+
+  &-js {
+    border-color: $color-tag-js;
+  }
+
+  &-php {
+    border-color: $color-tag-php;
+  }
+
+  &-react {
+    border-color: $color-tag-react;
+  }
+
+  &-laravel {
+    border-color: $color-tag-laravel;
+  }
+
+  &-mysql {
+    border-color: $color-tag-mysql;
+  }
+  
+  &-html {
+    border-color: $color-tag-html;
+  }
+
+}
