@@ -1,0 +1,22 @@
+
+@import "../helpers/colors";
+
+a {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: $color-background;
+}
+
+a.linkedin:hover {
+  color: $color-linkedin;
+}
+
+a.github:hover {
+  color: $color-github;
+}
+
+a.twitter:hover {
+  color: $color-twitter;
+}

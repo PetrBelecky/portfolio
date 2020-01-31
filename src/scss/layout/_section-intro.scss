@@ -1,17 +1,15 @@
+@import "../helpers/colors";
+
 .intro {
     width: 100vw;
     height: 100vh;
-    background-color: #fff;
+    background-color: $color-text;
+    color: $color-background;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     position: relative;
     justify-content: center;
-    
-    span {
-        display: block;
-    }
 
     br {
         display: none;
@@ -20,35 +18,48 @@
     &__hello {
         font-size: 2.5rem;      
         margin-bottom: 1rem;   
-        font-family: "Raleway", sans-serif; 
         margin-top: -5rem;  
+        display: block;
+        font-weight: normal;
     }
 
     &__whoami{
         font-size: 1.4rem;
         margin-bottom: 3.5rem;
-        font-family: "Raleway", sans-serif;
+        display: block;
+        font-weight: normal;
     }
 
     &__findme {
         font-size: 1rem;
-        
+    }
+
+    &__see {
+        font-size: 1rem;
     }
 
     &__projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20%;
         position: absolute;
-        bottom: 0;    
-    }
+        bottom: 3rem;
+    }    
 
     &__cta {
-        margin-bottom: 0.5rem;
-        padding: 0.5rem;
-        font-size: 0.9rem;
+        padding: 0.6rem;
+        font-size: 1rem;
+        background-color:$color-secondary;
+        color: $color-background;
+        border: 2px solid $color-background;
+        border-radius: 5%;
     }
 
+    
+
     &__arrow {
-        width: 3rem;
-        height: 3rem;
+        font-size: 2.5rem;
         /* animation: updown 2s ease-out infinite; */
     }
 }
@@ -65,4 +76,4 @@
     100% {
       transform: translateY(-10%);
     }
-  } */
+} */

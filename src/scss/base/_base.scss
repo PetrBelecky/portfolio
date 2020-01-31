@@ -1,10 +1,15 @@
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap');
+
+@import "../helpers/colors";
+
 body {
   font-family: "Roboto", sans-serif;
+  background-color: $color-background;
+  color: $color-text;
   width: 100vw;
   line-height: 1.5;
 }
@@ -14,5 +19,9 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+.hidden {
+  display: none !important;
 }

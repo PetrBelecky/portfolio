@@ -1,3 +1,5 @@
+@import "../helpers/colors";
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -6,5 +8,6 @@
   height: 5rem;
   font-size: 2rem;
   padding: 0 3rem;
-  color: darkgrey;
+  background-color: $color-text;
+  color: $color-background;
 }
