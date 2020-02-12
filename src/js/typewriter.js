@@ -11,14 +11,12 @@ class TypeWriter {
     this.currentText = textArea;
     this.isDeleting = false;
     this.wordIndex = 0;
-    this.speed = 300;
+    this.speed = 200;
     this.type();
   }
 
   type() {
-
     const currentIndex = this.wordIndex % this.beats.length;
-    console.log(currentIndex);
     const fullText = this.beats[currentIndex];
 
     if (!this.isDeleting) {
@@ -28,14 +26,14 @@ class TypeWriter {
     }
 
     if (this.isDeleting) {
-      this.speed = 100;
+      this.speed = 50;
     } else {
-      this.speed = 300;
+      this.speed = 200;
     }
 
     if (fullText === this.currentText.textContent) {
       this.isDeleting = true;
-      this.speed = 1000;
+      this.speed = 2000;
     }
 
     if (this.currentText.textContent === '') {
