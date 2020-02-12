@@ -2,43 +2,36 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Petr Bělecký | Digital enthusiast</title>
 
   <!-- Stylesheet declaration -->
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main.css" />
 </head>
 
 <body>
   <main>
-
     <section class="intro">
-
-      <!-- remove BEM and find out a way to include 3 beats with animation  -->
-
-      <!-- maybe add arrows at sides, that will change? -->
-      <!-- maybe three dots bellow, to indicate there is many more? ability to slide -->
-      <!-- or type it same way as Natali -->
+      <!-- remove BEM -->
 
       <h1>
         <span class="intro__hello">Hi, I am Petr</span>
 
-        <span class="intro__whoami">I am a web developer</span>
+        <span class="intro__whoami">
+          <span>I am </span>
+          <span class="beat" id="beat"></span>
+        </span>
 
-        <span class="intro__whoami hidden">I am a digital enthusiast</span>
-
-        <span class="intro__whoami hidden">I am a passionate learner</span>
       </h1>
-
 
       <div class="intro__projects">
         <button class="btn btn--normal btn--secondary">See my projects</button>
-        <button class="btn btn--normal btn--secondary-inverted">Contact me</button>
-
+        <button class="btn btn--normal btn--secondary-inverted-outlined">
+          Contact me
+        </button>
       </div>
-
     </section>
 
     <section class="projects">
@@ -50,7 +43,7 @@
 
       <div class="project">
         <div class="project__thumb">
-          <img src="/img/santa.svg" alt="Golden project">
+          <img src="/img/santa.svg" alt="Golden project" />
         </div>
         <div class=" project__title">
           <h3>This project is just golden</h3>
@@ -69,7 +62,7 @@
 
       <div class="project">
         <div class="project__thumb">
-          <img src="/img/moon.svg" alt="Sky is the limit">
+          <img src="/img/moon.svg" alt="Sky is the limit" />
         </div>
         <div class="project__title">
           <h3>Sky is the limit</h3>
@@ -87,7 +80,7 @@
 
       <div class="project">
         <div class="project__thumb">
-          <img src="/img/chilling.svg" alt="My awesome project">
+          <img src="/img/chilling.svg" alt="My awesome project" />
         </div>
         <div class="project__title">
           <h3>My awesome project</h3>
@@ -103,26 +96,27 @@
         <button class="btn btn--small btn--primary">Show me more</button>
       </div>
 
-      <button class="btn btn--normal btn--primary">
+      <button class="btn btn--normal btn--primary-stripped">
         See all projects
         <span class="fas fa-angle-double-right"></span>
       </button>
-
     </section>
 
     <section class="skills">
-
       <h2>My skills</h2>
 
       <h3>Acquired skills</h3>
 
       <p class="skills__acquired">
-        <span class="tag-html tag--rectangle">HTML5</span>
-        <span class="tag-css tag--rectangle">CSS3</span>
+        <span class="tag-html tag--rectangle">HTML</span>
+        <span class="tag-css tag--rectangle">CSS</span>
         <span class="tag-js tag--rectangle">JavaScript</span>
       </p>
 
-      <h3>Now learning</h3> <!-- add animation with three dots -->
+      <h3>Now learning</h3>
+      <!-- add animation with three dots -->
+      <!-- make the tags to be on white background with shadow, to pop them up as in Material Design - top/botom border can vary according to color of language + on hover, the tag will pop up more and maybe change background accordign to language color-->
+      <!-- add Git, Webpack -->
 
       <p class="skills__learning">
         <span class="tag-php tag--rectangle">PHP</span>
@@ -132,20 +126,17 @@
       </p>
     </section>
 
-
     <section class="contact">
-
       <h2>Contact me</h2>
 
       <form class="form" action="#">
-
         <div class="form__input-wrapper">
-          <input class="form__input" type="text" name="" id="name" required>
+          <input class="form__input" type="text" name="" id="name" required />
           <label class="form__label" for="name">Your name</label>
         </div>
 
         <div class="form__input-wrapper">
-          <input class="form__input" type="email" name="" id="email" required>
+          <input class="form__input" type="email" name="" id="email" required />
           <label class="form__label" for="email">Your e-mail</label>
         </div>
 
@@ -158,19 +149,23 @@
           Submit
           <span class="fas fa-paper-plane"></span>
         </button>
-
       </form>
     </section>
 
-    <hr>
-
     <footer class="footer">
-      <span class="fab fa-github-square"></span>
-      <span class="fab fa-linkedin"></span>
-      <span class="fab fa-twitter-square"></span>
+      <a href="https://github.com/PetrBelecky" target="_blank">
+        <span class="fab fa-github-square"></span>
+      </a>
+      <a href="https://www.linkedin.com/in/belecky/" target="_blank">
+        <span class="fab fa-linkedin"></span>
+      </a>
+      <a href="https://twitter.com/PetrBelecky" target="_blank">
+        <span class="fab fa-twitter-square"></span>
+      </a>
     </footer>
-
   </main>
+
+  <script src="/js/typewriter.js"></script>
 </body>
 
 </html>
