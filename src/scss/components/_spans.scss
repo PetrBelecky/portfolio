@@ -1,7 +1,21 @@
 @import "../helpers/colors";
 
+.fab:hover,
+.fab:active {
+  cursor: pointer;
+  /* color: scale-color($color: $color-background, $lightness: -20%); */
+  /* color: scale-color($color: $color-primary, $lightness: -10%); */
+  background: linear-gradient(
+    122deg,
+    rgba(25, 124, 211, 1) 0%,
+    rgba(206, 74, 126, 1) 52%
+  );
+  background-repeat: no-repeat;
+  color: $color-fill;
+  line-height: 0.8 !important;
+}
+
 .tag {
-  
   &--rectangle {
     border-style: solid;
     border-width: 1px;
@@ -41,9 +55,8 @@
   &-mysql {
     border-color: $color-tag-mysql;
   }
-  
+
   &-html {
     border-color: $color-tag-html;
   }
-
 }
