@@ -17,6 +17,7 @@ function createStructure(done) {
     'src/fonts',
     'src/img',
     'src/scss',
+    'src/js',
   ];
   const files = [
     'src/index.html',
@@ -42,7 +43,11 @@ function createStructure(done) {
 // deletes all assets (HTML, fonts, images) in dist
 function cleanAssets(done) {
   return del(
-    ['dist/**/*.html', 'dist/fonts/**/*', 'dist/img/**/*'],
+    ['dist/**/*.html',
+      'dist/fonts/**/*',
+      'dist/img/**/*',
+      'dist/js/**/*',
+      'dist/css/**/*'],
     { force: true }
   );
 }
@@ -78,6 +83,11 @@ function publishFonts(done) {
 function publishImages(done) {
   return gulp.src('src/img/**/*')
     .pipe(gulp.dest('dist/img'));
+}
+// Copy all JS from src/js into dist
+function publishJS(done) {
+  return gulp.src('src/js/**/*.js')
+    .pipe(gulp.dest('dist/js'));
 }
 
 // compile SCSS files
@@ -115,6 +125,7 @@ function watchFiles(done) {
   gulp.watch("src/fonts/**/*", gulp.series(publishFonts, reload));
   gulp.watch("src/img/**/*", gulp.series(publishImages, reload));
   gulp.watch("src/scss/**/*.scss", gulp.series(compileScss, reload));
+  gulp.watch("src/js/**/*.js", gulp.series(publishJS, reload));
 }
 
 // browserSync server
@@ -140,7 +151,8 @@ exports.publish = gulp.series(
   cleanAssets,
   publishHtml,
   publishFonts,
-  publishImages
+  publishImages,
+  publishJS
 );
 
 exports.build_prod = gulp.series(
@@ -156,7 +168,8 @@ exports.build_dev = gulp.series(
   publishHtmlDevelopment,
   publishFonts,
   publishImages,
-  compileScssDevelopment
+  compileScssDevelopment,
+  publishJS
 );
 
 exports.watch = gulp.series(
@@ -165,6 +178,7 @@ exports.watch = gulp.series(
   publishFonts,
   publishImages,
   compileScssDevelopment,
+  publishJS,
   serve,
   watchFiles
 );
