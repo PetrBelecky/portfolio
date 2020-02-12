@@ -1,11 +1,8 @@
 
 @import "../helpers/colors";
 
-a {
-  text-decoration: underline;
-}
 
-a:visited {
+footer > a:visited {
   color: $color-background;
 }
 
