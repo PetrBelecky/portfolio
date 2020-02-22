@@ -6,6 +6,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.5rem;
   font-weight: normal;
+
+  @media (min-width: 321px ) {
+    font-size: 3rem;
+  }
 }
 
 h2 {
@@ -13,9 +17,19 @@ h2 {
   margin-top: 0;
   text-align: center;
   font-size: 1.5em;
+  width: 100%;
+
+  @media (min-width: 375px ) {
+    font-size: 1.7rem;
+  }
 }
 
 h3 {
-  margin-bottom: 0.8rem;
   font-size: 1.1em;
+  margin-bottom: 1rem;
+  width: 100%;
+
+  @media (min-width: 375px ) {
+    font-size: 1.2rem;
+  }
 }
