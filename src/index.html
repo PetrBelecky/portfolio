@@ -8,7 +8,7 @@
   <title>Petr Bělecký | Digital enthusiast</title>
 
   <!-- Stylesheet declaration -->
-  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
@@ -43,59 +43,81 @@
 
       <!-- Add a labels to projects learning / client work -->
 
-      <div class="project">
-        <div class="project__thumb">
-          <img src="/img/santa.svg" alt="Golden project" />
-        </div>
-        <div class=" project__title">
-          <h3>This project is just golden</h3>
-        </div>
-        <div class="project__text">
-          Like a pair of socks. No kid wants them, but every adults needs them.
-        </div>
-        <div class="project__lang">
-          <span class="tag--bottom tag-html">HTML</span>
-          <span class="tag--bottom tag-css">CSS</span>
-          <span class="tag--bottom tag-js">JavaScript</span>
-          <span class="tag--bottom tag-php">PHP</span>
-        </div>
-        <button class="btn btn--small btn--primary">Show me more</button>
-      </div>
+      <div class="projects__wrapper">
 
-      <div class="project">
-        <div class="project__thumb">
-          <img src="/img/moon.svg" alt="Sky is the limit" />
+        <div class="project">
+          <div class="project__thumb">
+            <img src="/img/welcome.svg" alt="Purest JavaScript project" />
+          </div>
+          <div class="project__title">
+            <h3>Pure JavaScript project</h3>
+          </div>
+          <div class="project__text">
+            A magical place where everything is an object and types don't matter.
+          </div>
+          <div class="project__lang">
+            <span class="tag--bottom tag-react">React</span>
+            <span class="tag--bottom tag-js">JavaScript</span>
+          </div>
+          <button class="btn btn--small btn--primary">Show me more</button>
         </div>
-        <div class="project__title">
-          <h3>Sky is the limit</h3>
-        </div>
-        <div class="project__text">
-          Unless you can afford to launch a car into space. Just for fun.
-        </div>
-        <div class="project__lang">
-          <span class="tag--bottom tag-react">React</span>
-          <span class="tag--bottom tag-laravel">Laravel</span>
-          <span class="tag--bottom tag-mysql">MySQL</span>
-        </div>
-        <button class="btn btn--small btn--primary">Show me more</button>
-      </div>
 
-      <div class="project">
-        <div class="project__thumb">
-          <img src="/img/chilling.svg" alt="My awesome project" />
+        <div class="project">
+          <div class="project__thumb">
+            <img src="/img/moon.svg" alt="Sky is the limit" />
+          </div>
+          <div class="project__title">
+            <h3>Sky is the limit</h3>
+          </div>
+          <div class="project__text">
+            Unless you can afford to launch a car into space. Just for fun.
+          </div>
+          <div class="project__lang">
+            <span class="tag--bottom tag-react">React</span>
+            <span class="tag--bottom tag-laravel">Laravel</span>
+            <span class="tag--bottom tag-mysql">MySQL</span>
+            <span class="tag--bottom tag-sass">Sass</span>
+          </div>
+          <button class="btn btn--small btn--primary">Show me more</button>
         </div>
-        <div class="project__title">
-          <h3>My awesome project</h3>
+
+        <div class="project">
+          <div class="project__thumb">
+            <img src="/img/santa.svg" alt="Golden project" />
+          </div>
+          <div class=" project__title">
+            <h3>This project is just golden</h3>
+          </div>
+          <div class="project__text">
+            Like a pair of socks. No kid wants them, but every adults needs them.
+          </div>
+          <div class="project__lang">
+            <span class="tag--bottom tag-html">HTML</span>
+            <span class="tag--bottom tag-sass">Sass</span>
+            <span class="tag--bottom tag-js">JavaScript</span>
+            <span class="tag--bottom tag-php">PHP</span>
+          </div>
+          <button class="btn btn--small btn--primary">Show me more</button>
         </div>
-        <div class="project__text">
-          Website that makes today and all future days awesome.
+
+        <div class="project">
+          <div class="project__thumb">
+            <img src="/img/winners.svg" alt="My awesome project" />
+          </div>
+          <div class="project__title">
+            <h3>My awesome project</h3>
+          </div>
+          <div class="project__text">
+            Website that makes today and all future days awesome.
+          </div>
+          <div class="project__lang">
+            <span class="tag--bottom tag-html">HTML</span>
+            <span class="tag--bottom tag-css">CSS</span>
+            <span class="tag--bottom tag-js">JavaScript</span>
+          </div>
+          <button class="btn btn--small btn--primary">Show me more</button>
         </div>
-        <div class="project__lang">
-          <span class="tag--bottom tag-html">HTML</span>
-          <span class="tag--bottom tag-css">CSS</span>
-          <span class="tag--bottom tag-js">JavaScript</span>
-        </div>
-        <button class="btn btn--small btn--primary">Show me more</button>
+
       </div>
 
       <button class="btn btn--normal btn--primary-stripped">
@@ -107,25 +129,32 @@
     <section class="skills">
       <h2>My skills</h2>
 
-      <h3>Acquired skills</h3>
+      <div class="skills__acquired">
+        <h3>Acquired skills
+          <span class="fas fa-check-circle"></span>
+        </h3>
+        <div class=" skills__tag-wrapper">
+          <span class="tag-html tag--rectangle">HTML</span>
+          <span class="tag-css tag--rectangle">CSS</span>
+          <span class="tag-js tag--rectangle">JavaScript</span>
+        </div>
+      </div>
 
-      <p class="skills__acquired">
-        <span class="tag-html tag--rectangle">HTML</span>
-        <span class="tag-css tag--rectangle">CSS</span>
-        <span class="tag-js tag--rectangle">JavaScript</span>
-      </p>
-
-      <h3>Now learning</h3>
-      <!-- add animation with three dots -->
-      <!-- make the tags to be on white background with shadow, to pop them up as in Material Design - top/botom border can vary according to color of language + on hover, the tag will pop up more and maybe change background accordign to language color-->
-      <!-- add Git, Webpack -->
-
-      <p class="skills__learning">
-        <span class="tag-php tag--rectangle">PHP</span>
-        <span class="tag-laravel tag--rectangle">Laravel</span>
-        <span class="tag-react tag--rectangle">React</span>
-        <span class="tag-mysql tag--rectangle">MySQL</span>
-      </p>
+      <div class="skills__learning">
+        <h3>Now learning
+          <span class="fas fa-cog"></span>
+        </h3>
+        <div class="skills__tag-wrapper">
+          <span class="tag-php tag--rectangle">PHP</span>
+          <span class="tag-laravel tag--rectangle">Laravel</span>
+          <span class="tag-react tag--rectangle">React</span>
+          <span class="tag-mysql tag--rectangle">MySQL</span>
+          <span class="tag-sql tag--rectangle">SQL</span>
+          <span class="tag-sass tag--rectangle">Sass</span>
+          <span class="tag-git tag--rectangle">Git</span>
+          <span class="tag-webpack tag--rectangle">Webpack</span>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="contact">
@@ -167,8 +196,8 @@
     </footer>
   </main>
 
-  <script src="/js/typewriter.js"></script>
-  <script src="/js/scroll-handler.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/scroll-handler.js"></script>
 </body>
 
 </html>
