@@ -7,5 +7,23 @@
     /*  in order to scroll headline into view
         otherwise it will be scrolled to 
         top border of the section */
-    padding-top: 1rem;
+    // padding-top: 1rem;
+
+    &__wrapper {
+        width: 100vw;
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: 768px ) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-around;
+            padding: 0.5rem 1rem;
+        }
+
+    }
 }
